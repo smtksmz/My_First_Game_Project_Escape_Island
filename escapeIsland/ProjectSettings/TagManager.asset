@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - zemin
+  - floor
+  - ground
   layers:
   - Default
   - TransparentFX
