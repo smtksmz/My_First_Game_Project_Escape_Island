@@ -8,6 +8,7 @@ public class move_controller : MonoBehaviour
     public float jumpForce = 4.0f;
     private bool jump;
     private bool grounded=true;
+    private float jumpAnim = 0f;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -37,16 +38,19 @@ public class move_controller : MonoBehaviour
         move = new Vector2(Input.GetAxisRaw("Horizontal"),rb.velocity.y*0.20f);
         if(rb.velocity.x > 0 ) 
         {
+            jumpAnim = 0f;
             animator.SetFloat("speed", speed);
             spriteRenderer.flipX = false;
         }
         else if (rb.velocity.x < 0)
         {
+            jumpAnim = 0f;
             animator.SetFloat("speed", speed);
             spriteRenderer.flipX = true;
         }
         else if(rb.velocity.x ==0)
         {
+            jumpAnim = 0f;
             animator.SetFloat("speed", 0);
         }
 
@@ -54,8 +58,8 @@ public class move_controller : MonoBehaviour
         {
             jump = true;
             grounded = false;
-            //anim.SetTrigger("jump");
-            //anim.SetBool("grounded", false);
+            jumpAnim = 1;
+            animator.SetFloat("jumpA",jumpAnim);
         }
     }
 
@@ -63,7 +67,8 @@ public class move_controller : MonoBehaviour
     {
         if (other.gameObject.CompareTag("ground"))
         {
-            //anim.SetBool("grounded", true);
+            jumpAnim = 0;
+            animator.SetFloat("jumpA", jumpAnim);
             grounded = true;
         }
     }
