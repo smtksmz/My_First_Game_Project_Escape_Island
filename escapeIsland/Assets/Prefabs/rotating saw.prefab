@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1254361666987156152}
   - component: {fileID: 3947363807673657861}
   - component: {fileID: 4737620846604186786}
+  - component: {fileID: 1481221635323852975}
   m_Layer: 0
   m_Name: rotating saw
   m_TagString: Untagged
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 46937783
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -96934452, guid: 939ca2b900120e04fb0dd2f78aec67bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,3 +121,18 @@ CircleCollider2D:
   m_Offset: {x: 0.0022966862, y: -0.0011483431}
   serializedVersion: 2
   m_Radius: 0.65033495
+--- !u!114 &1481221635323852975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136695872675179454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3251c618401458044b6a351f6b542018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 1000
+  moveSpeed: 3
+  movementRange: 3
