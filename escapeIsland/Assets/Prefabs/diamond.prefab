@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9217345410131136005}
   - component: {fileID: 7460802396352932824}
   - component: {fileID: 3929569487859975123}
+  - component: {fileID: 336295851488921560}
   m_Layer: 0
   m_Name: diamond
   m_TagString: Untagged
@@ -138,3 +139,15 @@ PolygonCollider2D:
       - {x: 0.31159544, y: -0.055602953}
       - {x: 0.32, y: 0.04}
   m_UseDelaunayMesh: 0
+--- !u!114 &336295851488921560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3042857870410328073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc55412f4e04e21469270d54180dfeb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

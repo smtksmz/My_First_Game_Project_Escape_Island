@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5979893461246289923}
   - component: {fileID: 7236371792109574891}
   - component: {fileID: 2871799483068288674}
+  - component: {fileID: 4613124300347103987}
   m_Layer: 0
   m_Name: button
   m_TagString: Untagged
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 46937783
-  m_SortingLayer: 3
+  m_SortingLayerID: 410318505
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -534813099, guid: 939ca2b900120e04fb0dd2f78aec67bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -114,7 +115,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -154,3 +155,16 @@ PolygonCollider2D:
       - {x: 0.40206528, y: -0.24930525}
       - {x: 0.37097976, y: -0.18466097}
   m_UseDelaunayMesh: 0
+--- !u!114 &4613124300347103987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882205217380072765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db4589721202864697ec5770e239d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diamondpre: {fileID: 3042857870410328073, guid: 4578572a8cf77ce4387fcf29c090e64e, type: 3}
