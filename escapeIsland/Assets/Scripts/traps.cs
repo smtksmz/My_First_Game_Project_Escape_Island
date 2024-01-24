@@ -17,6 +17,7 @@ public class traps : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             life.lifes--;
+            diamond.point = 0;
             SceneManager.LoadScene(_scene.name);
         }
     }

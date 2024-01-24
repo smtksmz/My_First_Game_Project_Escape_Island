@@ -39,6 +39,7 @@ public class rotation : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             life.lifes--;
+            diamond.point = 0;
             SceneManager.LoadScene(scene.name);
         }
     }
