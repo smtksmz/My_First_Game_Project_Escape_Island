@@ -10,8 +10,7 @@ public class destroy : MonoBehaviour
         if (collision.gameObject.CompareTag("diamond"))
         {
             diamond.point++;
-            Debug.Log(diamond.point);
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
     }
 }

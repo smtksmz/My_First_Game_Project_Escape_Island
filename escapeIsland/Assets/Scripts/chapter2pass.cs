@@ -10,17 +10,18 @@ public class chapter2pass : MonoBehaviour
     private void Start()
     {
         scene1 = SceneManager.GetActiveScene();
-        //capcoll = GetComponent<CapsuleCollider2D>();
-        //capcoll.enabled = false;
+        capcoll = GetComponent<CapsuleCollider2D>();
+        capcoll.enabled = false;
     }
 
-    //void collenable()
-    //{
-    //    if(diamond.point==6)
-    //    { 
-    //        capcoll.enabled = true;
-    //    }
-    //}
+    private void Update()
+    {
+      if (diamond.point == 6)
+      {
+        capcoll.enabled = true;
+      }   
+    }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
