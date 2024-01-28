@@ -20,5 +20,9 @@ public class traps : MonoBehaviour
             diamond.point = 0;
             SceneManager.LoadScene(_scene.name);
         }
+        if(life.lifes==0)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }
