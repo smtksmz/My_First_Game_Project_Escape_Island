@@ -42,5 +42,9 @@ public class rotation : MonoBehaviour
             diamond.point = 0;
             SceneManager.LoadScene(scene.name);
         }
+        if (life.lifes == 0)
+        {
+            SceneManager.LoadScene(4);
+        }
     }
 }

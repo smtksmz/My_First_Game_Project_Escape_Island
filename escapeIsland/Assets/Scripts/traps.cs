@@ -18,11 +18,12 @@ public class traps : MonoBehaviour
         {
             life.lifes--;
             diamond.point = 0;
+            wrongbutton.chance = 2;
             SceneManager.LoadScene(_scene.name);
         }
         if(life.lifes==0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
     }
 }

@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 public class key : MonoBehaviour
 {
     [SerializeField] private CapsuleCollider2D passcol;
-    private GameObject keyenable;
+    private SpriteRenderer keydisrend;
+    private CapsuleCollider2D keydiscap;
 
     private void Start()
     {
-        keyenable=GetComponent<GameObject>();
+        passcol.GetComponent<CapsuleCollider2D>().enabled = false;
+        keydisrend =GetComponent<SpriteRenderer>();
+        keydiscap=GetComponent<CapsuleCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,7 +21,9 @@ public class key : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
            passcol.GetComponent<CapsuleCollider2D>().enabled = true;
-           keyenable.SetActive(false);
+           keydisrend.enabled = false;
+           keydiscap.enabled = false;
+           
         }
     }
 }

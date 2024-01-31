@@ -6,10 +6,8 @@ using UnityEngine.SceneManagement;
 public class chapter2coll : MonoBehaviour
 {
     private Scene scene1;
-    private CapsuleCollider2D capsuleCollider2;
     private void Start()
-    {
-        capsuleCollider2.GetComponent<CapsuleCollider2D>().enabled = false; 
+    { 
         scene1 = SceneManager.GetActiveScene();
     }
 

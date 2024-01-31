@@ -12,11 +12,10 @@ public class wrongbutton : MonoBehaviour
         if (collision.gameObject.CompareTag("stone"))
         {
             chance--;
-            Debug.Log(chance);
         }
         if(chance==0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
     }
 }
