@@ -7,9 +7,11 @@ public class truebutton : MonoBehaviour
 {
     [SerializeField] SpriteRenderer key;
     [SerializeField] CapsuleCollider2D keycap;
+    AudioSource audio1;
 
     private void Start()
     {
+        audio1 = GetComponent<AudioSource>();
         key.GetComponent<SpriteRenderer>().enabled = false;
         keycap.GetComponent<CapsuleCollider2D>().enabled = false;
     }
@@ -18,6 +20,7 @@ public class truebutton : MonoBehaviour
     {
        if (collision.gameObject.CompareTag("stone")) 
        {
+            audio1.Play();
             key.GetComponent<SpriteRenderer>().enabled = true;
             keycap.GetComponent<CapsuleCollider2D>().enabled = true;
         }
